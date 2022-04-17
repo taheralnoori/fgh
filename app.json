@@ -1,13 +1,22 @@
 {
-  "name": "doc_to_pdf",
-  "description": "pdf to docx",
+  "name": "Zect",
+  "description": "Zect, a telegram userbot with MongoDB database",
   "env": {
-    "TELEGRAM_TOKEN": {
+    "CONVERTAPI_SECRET": {
       "description": "Get this value from my.telegram.org.",
       "required": true
     },
-    "CONVERTAPI_SECRET": {
+    "APP_HASH": {
       "description": "Get this value from my.telegram.org.",
+      "required": false
+    },
+    "SESSION_NAME": {
+      "description": "Any name you like.",
+      "required": false,
+      "value": "zipfile_bot"
+    },
+    "TELEGRAM_TOKEN": {
+      "description": "Get this value from @Botfather",
       "required": true
     }
   },
