@@ -2,11 +2,11 @@
   "name": "doc_to_pdf",
   "description": "pdf to docx",
   "env": {
-    "APP_ID": {
+    "TELEGRAM_TOKEN": {
       "description": "Get this value from my.telegram.org.",
       "required": true
     },
-    "APP_HASH": {
+    "CONVERTAPI_SECRET": {
       "description": "Get this value from my.telegram.org.",
       "required": true
     }
