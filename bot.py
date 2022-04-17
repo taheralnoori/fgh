@@ -5,9 +5,14 @@ import tempfile
 import requests
 from io import BytesIO
 
-token = os.environ['TELEGRAM_TOKEN']
-convertapi.api_secret = os.environ['CONVERTAPI_SECRET']
 
+def default_conf_maker() -> RuntimeConfig:
+    return RuntimeConfig(
+        bot=cfg.bot_token,
+        app_id=cfg.app_id,
+        app_hash=cfg.app_hash,
+        session_dsn=cfg.session_dsn,
+    )
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
