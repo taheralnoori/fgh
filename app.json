@@ -1,0 +1,20 @@
+{
+  "name": "doc_to_pdf",
+  "description": "pdf to docx",
+  "env": {
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true
+    },
+    "APP_HASH": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
