@@ -10,8 +10,6 @@ def default_conf_maker() -> RuntimeConfig:
     return RuntimeConfig(
         bot=cfg.bot_token,
         app_id=cfg.app_id,
-        app_hash=cfg.app_hash,
-        session_dsn=cfg.session_dsn,
     )
 bot = telebot.TeleBot(token)
 
